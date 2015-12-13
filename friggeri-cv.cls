@@ -178,6 +178,12 @@ BoldItalicFont=TeX Gyre Heros Bold Italic
   \end{itemize}
 }
 
+
+%%%%%%%%
+% Misc %
+%%%%%%%%
+\newcommand{\bodyspace}{\vspace{-8pt}}
+
 %%%%%%%%%%%%%%
 % Side block %
 %%%%%%%%%%%%%%
