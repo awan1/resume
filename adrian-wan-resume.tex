@@ -19,62 +19,35 @@
 \begin{aside}
   \section{contact}
     \href{mailto:adrianwan2@gmail.com?subject=Regarding%20your%20resume}{\faEnvelope}~adrianwan2@gmail.com
-    \faPhone~(610)-505-5087
+    % \faPhone~(610)-505-5087
     ~
     \href{http://awan1.github.io}{\faGlobe}~awan1.github.io
     \href{http://linkedin.com/in/adrianwan2}{\faLinkedin}~lnked.in/awan
     \href{http://github.com/awan1}{\faGithub}~github.com/awan1
-  \section{languages}
-    trilingual English, Cantonese, Mandarin
-    fluent Japanese
-    beginner French, ASL
-  \section{programming}
+%  \section{languages}
+%    trilingual English, Cantonese, Mandarin
+%    fluent Japanese
+%    beginner French, ASL
+  \section{software}
     {\color{red} $\varheart$} Python
     (\texttt{pandas, SciPy})
-    MATLAB
+    Scala $\cdot$ MATLAB
+    gRPC $\cdot$ Protobuf
+    GCP $\cdot$ Kubernetes $\cdot$ Docker
     {\color{red} $\varheart$} Git
     Atlassian Stack
     (Stash, JIRA)
-
+  \section{influences}
+    Pragmatic Programmer
+    Wait But Why
+    Less Wrong
 \end{aside}
 
 \section{about}
-I develop \textbf{extensible and flexible analysis tools} to produce \\
-actionable, robust, \textbf{data-driven insights}.
+I build clean, extensible, flexible codebases to make work better.
 
-\section{education}
-
-\begin{entrylist}
-  \entry
-    {2011--2015}
-    {B.A. {\normalfont Physics \& Computer Science}}
-    {Swarthmore College, Swarthmore PA}
-    {Cumu. GPA: 3.9 $\cdot$ \emph{Phi Beta Kappa} % Total: 3.887
-     \smallskip
-
-     \textbf{Physics:}
-     Statistical Physics $\cdot$
-     Quantum Theory $\cdot$
-     % Independent Research (Lab. Plasma) $\cdot$
-     Analytical Dynamics $\cdot$
-     \\
-     Electrodynamics $\cdot$
-     Thermodynamics \& Stat.\ Mechanics %$\cdot$
-     %Optics $\cdot$
-     %Quantum Mechanics
-     \\
-     \textbf{CS:}
-     Intro.\ Programming Languages $\cdot$
-     Algorithms $\cdot$
-     Cloud Systems \& Data \\ Networks $\cdot$
-     Databases $\cdot$
-     Operating Systems $\cdot$
-     A.I.\ $\cdot$
-     Bioinformatics %$\cdot$
-     %Intro. Computer Systems $\cdot$
-     %Data Structures \& Algorithms
-     }
-\end{entrylist}
+%I develop \textbf{extensible and flexible analysis tools} to produce \\
+%actionable, robust, \textbf{data-driven insights}.
 
 \section{experience}
 
@@ -86,13 +59,33 @@ actionable, robust, \textbf{data-driven insights}.
     {
       \bodyspace
       \begin{my-itemize}
-      \item \textbf{Re-engineered} a MATLAB script-based, labor-intensive process for device sensor modeling into a streamlined, \textbf{extensible Python library}:
+      	% Slideware, testing arch, real services 
+        \item Created \textbf{Python prototype} of service, device, \& app interactions to \textbf{validate end-to-end behavior}:
+        \begin{my-itemize}
+          \item \textbf{Designed \& implemented a modular framework} supporting CLI interactions, batch testing, \& \textbf{arbitrary substitution} with real components;
+          \item Enabled \textbf{novel} integration and end-to-end tests of \textbf{user-facing behavior};
+          \item With understanding gained, \textbf{self-taught Scala} to assist services team, \textbf{implementing \& shipping} changes to consumer-facing services.
+        \end{my-itemize}
+        % Hiddenite microservice
+        \item Deployed \& owned a \textbf{gRPC microservice} to buffer teams from instability:
+      
+        \begin{my-itemize}
+          % Apps, QA, services, FT
+          \item Supported $\sim$20 people across 4 teams, \textbf{balancing} contrasting needs;
+          % \item Enabled services team to transition gradually from HTTP to protobuf; 
+          \item Leveraged GCP \& Kubernetes for \textbf{auto-scaling} \& \textbf{no-downtime} rollouts;
+          \item \textbf{Developed processes} around frequent breaking changes to ease development; used \textbf{tiered deployment} \& \textbf{extensive smoke tests} to enable \textbf{isolated testing} of affected components. Sped up debugging $\sim$5x.
+        \end{my-itemize}
+      
+      	% Tempcomp
+        \item \textbf{Re-engineered} a MATLAB script-based, labor-intensive process for temperature sensor modeling into a streamlined, \textbf{extensible Python library}:
 
         \begin{my-itemize}
-        \item Abstracted \textbf{mathematical models} for rapid prototyping and exploration;
-        \item Used across existing and future hardware to unlock product features;
-        \item \textbf{Planned and executed} as a one-month project;
-        \item Used to address customer-facing issues.
+        \item Abstracted \textbf{mathematical models} for rapid prototyping \& exploration;
+        \item \textbf{Continues to be used} for customer issues \& future products.
+        %\item Used across existing and future hardware to unlock product features;
+        %\item \textbf{Planned and executed} as a one-month project;
+        %\item Continues to be used to address customer-facing issues.
         \end{my-itemize}
       \end{my-itemize}
     }
@@ -103,12 +96,13 @@ actionable, robust, \textbf{data-driven insights}.
     {
       \bodyspace
       \begin{my-itemize}
-      \item Spearheaded Python prototyping of \textbf{data-driven user product}:
+      \item Spearheaded Python prototyping of \textbf{data-driven customer product}:
 
       \begin{my-itemize}
-      \item Developed, implemented, and evaluated models of on-device sensor data using \texttt{Pandas};
-      \item Employed \textbf{test-driven development} to publish an extensible modeling package, used within team to prototype related features;
-      \item \textbf{Balanced} development with research-style exploration of results and data.
+      \item Developed, implemented, \& evaluated on-device sensor data models;
+      %\item Developed, implemented, and evaluated models of on-device sensor data using \texttt{Pandas};
+      \item Employed \textbf{test-driven development} to publish a modular, extensible modeling package, used within team to prototype related features;
+      \item \textbf{Balanced} development with research-style data analysis.
       \end{my-itemize}
 
       % \item Used Agile software development principles to meet ambitious schedules, coordinating with UI/UX, cloud services, apps, and product marketing teams.
@@ -121,14 +115,12 @@ actionable, robust, \textbf{data-driven insights}.
     {
       \bodyspace
       \begin{my-itemize}
-      \item Received the \textbf{Vandervelde-Cheung Scholarship} for summer research.
+      % \item Received the \textbf{Vandervelde-Cheung Scholarship} for summer research.
       %; was invited to return during subsequent academic semester to continue research for academic credit.
 
-      \item Developed Python (\texttt{SciPy}) scripts to analyze plasma wind-tunnel data.
+      \item Developed Python (\texttt{SciPy}, \texttt{pandas}) analyses of plasma wind-tunnel data.
 
-      \item Received the \textbf{Outstanding Undergraduate Poster Award} for poster presentation at the APS Division of Plasma Physics 2013 Meeting.
-
-      \item Coauthored papers published in \textit{Physical Review Letters} and in \textit{Plasma Physics and Controlled Fusion}.
+      \item Received the \textbf{Outstanding Undergraduate Poster Award} at the APS Division of Plasma Physics 2013 Meeting; \textbf{coauthored} papers published in \textit{Physical Review Letters} \& in \textit{Plasma Physics and Controlled Fusion}.
       \end{my-itemize}
     }
 %\employer{Swarthmore Coll. Athletics}{Fall 2012 -- Ongoing}{Assistant Manager --- Women's Volleyball}
@@ -146,8 +138,41 @@ actionable, robust, \textbf{data-driven insights}.
 %\end{achievements}
 \end{entrylist}
 
+\section{education}
+
+\begin{entrylist}
+	\entry
+	{2011--2015}
+	{B.A. {\normalfont Physics \& Computer Science}}
+	{Swarthmore College, Swarthmore PA}
+	{Cumu. GPA: 3.9 $\cdot$ \emph{Phi Beta Kappa} % Total: 3.887
+		\smallskip
+		
+%		\textbf{Physics:}
+%		Statistical Physics $\cdot$
+%		Quantum Theory $\cdot$
+%		Analytical Dynamics $\cdot$
+%		\\
+%		Electrodynamics $\cdot$
+%		Thermodynamics \& Stat.\ Mechanics %$\cdot$
+%		%Optics $\cdot$
+%		%Quantum Mechanics
+%		\\
+%		\textbf{CS:}
+%		Intro.\ Programming Languages $\cdot$
+%		Algorithms $\cdot$
+%		Cloud Systems \& Data \\ Networks $\cdot$
+%		Databases $\cdot$
+%		Operating Systems $\cdot$
+%		A.I.\ $\cdot$
+%		Bioinformatics %$\cdot$
+%		%Intro. Computer Systems $\cdot$
+%		%Data Structures \& Algorithms
+	}
+\end{entrylist}
+
 \section{for more}
-Publications and more experiences are on my personal website and on LinkedIn.
+Publications \& more experiences are on my personal website \& on LinkedIn.
 
 % \section{publications}
 
@@ -164,5 +189,4 @@ Publications and more experiences are on my personal website and on LinkedIn.
 % \end{refsection}
 % \printbibsection{misc}{other publications}
 % \printbibsection{report}{research reports}
-
 \end{document}
