@@ -122,7 +122,7 @@ BoldItalicFont=TeX Gyre Heros Bold Italic
     \color{%
       \ifcase\value{colorCounter}%
         blue\or%
-        red\or%
+        %red\or%
         orange\or%
         green\or%
         purple\else%
